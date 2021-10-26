@@ -32,7 +32,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
        -name: publish to github packages
         uses: docker/build-push-action@v1
         with:
