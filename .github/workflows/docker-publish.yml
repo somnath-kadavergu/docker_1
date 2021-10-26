@@ -1,4 +1,4 @@
-name: Docker
+name: Docker Image CI
 
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
@@ -15,11 +15,7 @@ on:
   pull_request:
     branches: [ master ]
 
-env:
-  # Use docker.io for Docker Hub if empty
-  REGISTRY: ghcr.io
-  # github.repository as <account>/<repo>
-  IMAGE_NAME: ${{ github.repository }}
+
 
 
 jobs:
@@ -31,7 +27,7 @@ jobs:
       packages: write
 
     steps:
-      - name: Checkout repository
+       -name: Checkout repository
         uses: actions/checkout@v1
        -name: publish to github packages
         uses: docker/build-push-action@v1
