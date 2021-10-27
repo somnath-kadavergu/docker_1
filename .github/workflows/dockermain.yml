@@ -34,4 +34,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag d1243/docker_1:$(date +%s)
     - name: Docker push
-      run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/YOUR_DOCKER_HUB_REPI_NAME
+      run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/d1243
