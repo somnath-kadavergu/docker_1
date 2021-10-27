@@ -34,4 +34,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag somnath-kadavergu/hello-world:$(date +%s)
     - name: Docker push
-      run: docker push d1243/docker_1
+      run: docker push d1243/docker_1:latest
