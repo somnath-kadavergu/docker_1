@@ -26,5 +26,5 @@ jobs:
       with:
         context: .
         push: true
-        tags: d1243/docker_1:latest   
+       
         
